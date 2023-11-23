@@ -1,3 +1,3 @@
-module github.com/connanwa/jsslice
+module github.com/conbanwa/jsslice
 
 go 1.18
