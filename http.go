@@ -1,4 +1,4 @@
-package jsslice
+package js
 
 func SliceBody(body []byte, limit ...int) string {
 	body = Slice(body, limit...)
