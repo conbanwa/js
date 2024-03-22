@@ -1,5 +1,7 @@
 package js
 
+import "fmt"
+
 // Slice
 //
 // start Optional
@@ -78,4 +80,12 @@ func SubString(arr string, limit ...int) string {
 		return arr[0:0]
 	}
 	return arr[start:end]
+}
+
+func Table[T any](arr []T, args ...any) string {
+	out := fmt.Sprint(args...) + "\n"
+	for i, a := range arr {
+		out += ReplaceBool(fmt.Sprintf("%d|%+v\n", i, a))
+	}
+	return out
 }
