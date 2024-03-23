@@ -1,8 +1,12 @@
 # js
+
 string.slice() in go just like js/javascript!
+
 # sliceutil
 
-golang sliceutil, including methods like TakeWhile, Filter, ForEach and so on, which were inpired by js
+golang sliceutil, including methods like TakeWhile, Filter, ForEach and so on, which were inpired by js 
+
+similar: [github.com/conbanwa/slice](https://github.com/conbanwa/slice)
 
 # examples
 
@@ -36,4 +40,4 @@ func main() {
 
 # install
 
-import github.com/imshi187/sliceutil
+import github.com/conbanwa/js
