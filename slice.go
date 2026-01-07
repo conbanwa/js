@@ -89,3 +89,8 @@ func Table[T any](arr []T, args ...any) string {
 	}
 	return out
 }
+
+func ReplaceBool(old string) (str string) {
+	str = strings.Replace(old, "true", "√", -1)
+	str = strings.Replace(str, "false", "x", -1)
+	return
