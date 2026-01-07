@@ -1,7 +1,14 @@
 name: Update go.sum
 
 on:
-  pull_request:  # Auto-fix on PRs (e.g., Dependabot)
+  pull_request:
+    paths:  # Only trigger if these files change in the PR
+      - '**go**' # All Go source files
+      - '**.yml'
+  push:
+    paths:
+      - '**go**'
+      - '**.yml'
   schedule:
     - cron: '0 0 * * 0'  # Weekly
   workflow_dispatch:
