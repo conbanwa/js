@@ -85,13 +85,7 @@ func SubString(arr string, limit ...int) string {
 func Table[T any](arr []T, args ...any) string {
 	out := fmt.Sprint(args...) + "\n"
 	for i, a := range arr {
-		out += ReplaceBool(fmt.Sprintf("%d|%+v\n", i, a))
+		out += fmt.Sprintf("%d|%+v\n", i, a)
 	}
 	return out
-}
-
-func ReplaceBool(old string) (str string) {
-	str = strings.Replace(old, "true", "√", -1)
-	str = strings.Replace(str, "false", "x", -1)
-	return
 }
