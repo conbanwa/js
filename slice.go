@@ -94,3 +94,4 @@ func ReplaceBool(old string) (str string) {
 	str = strings.Replace(old, "true", "√", -1)
 	str = strings.Replace(str, "false", "x", -1)
 	return
+}
